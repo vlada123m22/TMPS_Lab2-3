@@ -27,10 +27,13 @@
 * Strategy
 
 ## Implementation
-Simplified class diagram of the project
+
+### Simplified class diagram of the project:
+
 ![img_1.png](img_1.png)
 
 * Bridge Pattern
+
     Used the Bridge Pattern to create a "bridege" between Operation System and application so that a version of every app can be created for every operation system. OperationalSystem is an attribute of Application.
 ```
 public abstract class Application {
@@ -41,6 +44,7 @@ public abstract class Application {
 }
 ```
 * Decorator pattern 
+
     Used the decorator pattern to add additional details to an app (Such as Menu Bar, Play Bar or Scroll Bar)
 ```
 public abstract class AbstractDecorator extends Application {
@@ -48,9 +52,11 @@ public abstract class AbstractDecorator extends Application {
      //Constructor and methods
 ```
 * Composite Pattern
+
     used Composite Pattern to replicate the behaviour of a file system
     ![img_2.png](img_2.png)
 * Strategy pattern
+
     Used Strategy pattern to represent the general behaviour of an aplplication (ex: view, execute, edit)
 ```
 public abstract class Application {
@@ -60,9 +66,14 @@ public abstract class Application {
 
 }
 ```
+
+
 ![img.png](img.png)
 
-## Main method:
+
+
+### Main method:
+
 ```
     public static void main(String[] args) throws Exception {
         Computer.setOS("Windows");
@@ -84,7 +95,8 @@ public abstract class Application {
     }
 ```
 
-## The output
+### The output
+
 ![img_3.png](img_3.png)
 
 
